@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>
+        Example Template
+    </title>
+</head>
+<body>
+
+{% if myvar %}
+<!--Here using Jinja Template to incorporate logic -->
+<h1>This variable I passed in using Jinja Templating : {{ myvar }}</h1>
+{% else %}
+<h1>Sorry,No variable was passed</h1>
+{% endif %}
+
+<h1>
+    This is an example template
+</h1>
+<p>
+    Hello ,This is Subham Sanghai.<br>
+    I am learning FLASK .. YAYY !!<br>
+    <a href="https://www.youtube.com/watch?v=HILynX3Dsoc&list=PLXmMXHVSvS-AjwTOtiW1DXFYTgUlrUmHV&index=4"> This is the youtube link to the Video  </a>
+
+    {% for link in links%}
+    <br><a href="{{ link }}">Here is a link!!</a><br>
+    {% endfor %}
+    <h3>Lets use some looping bitch!!</h3>
+</p>
+</body>
+</html>
